@@ -10,15 +10,16 @@ export const Form = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_bhv2hrh', 'template_a9em1fg', form.current, {
+      .sendForm('service_g8w2869', 'template_a9em1fg', form.current, {
         publicKey: 'gIWed3JCNFHvrfVKV',
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert('Message successfully sent!');
+          form.current.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert('Failed to send the message', error.text);
         },
       );
   };
@@ -34,29 +35,13 @@ export const Form = () => {
       <input type="text" name="from_subject" />
       <label>Message</label>
       <textarea name="message"/>
-      <input type="submit" value="Send" />
+      <input type="submit" className="btn" value="Send" />
       </form>
     </div>
     
   );
 };
 
-// const Form = () => {
-//   return (
-//     <div className="form">
-//         <form>
-//           <label>Your Name</label>
-//           <input type="text" />
-//           <label>Email</label>
-//           <input type="email" />  
-//           <label>Subject</label>
-//           <input type="text" />  
-//           <label>Message</label>
-//           <textarea rows="6" placeholder="Type your message here"/> 
-//           <button className="btn">Submit</button>  
-//         </form>
-//     </div>
-//   )
-// }
+
 
 export default Form

@@ -10,19 +10,14 @@ const AboutContent = () => {
         <div className="left">
             <h1>Who am I?</h1>
             <p>
-                Hello! I'm Stephen, a recent graduate in Electrical and
-                Electronics Engineering from Kwame Nkrumah University 
-                of Science and Technology with a strong passion for web 
-                development. As a creative and detail-oriented Full-stack 
-                Developer, I specialize in building user-friendly, visually
-                appealing websites and efficient server-side services. I
-                have experience in both frontend and backend development
-                using HTML, CSS, JavaScript, React, PHP, Laravel, and MySQL. 
-                Skilled in responsive design, database management,
-                version control, and API integration, I’m dedicated to 
-                staying current with new technologies and delivering high-quality
-                projects on time. Excited to bring my expertise to a dynamic 
-                and collaborative development team!
+                Hello! I'm Stephen, Innovative and detail-oriented Full-Stack 
+                Web Developer 
+                with hands-on experience building scalable, high-performance 
+                applications using React, Laravel, and modern development tools.
+                Skilled in developing user-friendly interfaces, 
+                optimizing backend systems, and delivering solutions that create 
+                real-world impact. Passionate about clean code, problem-solving, 
+                and continuous improvement.
             </p>
             <Link to="/contact">
                <button className="btn">Contact</button> 
